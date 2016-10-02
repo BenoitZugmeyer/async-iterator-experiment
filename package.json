@@ -19,6 +19,7 @@
   "homepage": "https://github.com/BenoitZugmeyer/async-iterator-experiment#readme",
   "devDependencies": {
     "babel-eslint": "^7.0.0",
+    "babel-plugin-external-helpers": "^6.8.0",
     "babel-preset-stage-3": "^6.17.0",
     "core-js": "^2.4.1",
     "eslint": "^3.7.0",

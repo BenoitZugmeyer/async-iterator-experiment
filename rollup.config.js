@@ -9,6 +9,7 @@ export default {
       babel({
           babelrc: false,
           presets: ["stage-3"],
+          plugins: ["external-helpers"],
       }),
 
       resolve(),
