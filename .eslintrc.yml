@@ -1,3 +1,4 @@
+parser: babel-eslint
 
 extends: eslint:recommended
 
@@ -5,9 +6,11 @@ rules:
   arrow-parens: error
   arrow-spacing: error
   comma-dangle: [error, always-multiline]
+  no-console: off
   no-constant-condition: off
   no-unexpected-multiline: error
   no-unreachable: error
+  no-unused-vars: [error, { argsIgnorePattern: "_" }]
   no-var: error
   object-shorthand: error
   prefer-arrow-callback: error
@@ -18,8 +21,5 @@ rules:
   strict: [error, global]
 
 env:
-    node: true
+    browser: true
     es6: true
-
-parserOptions:
-    sourceType: module

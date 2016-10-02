@@ -209,7 +209,7 @@ function _asyncIterator(iterable) { if (typeof Symbol === "function") { if (Symb
 
 function listenTo(element, event) {
     let resolve = null;
-    let listener = event => {
+    const listener = event => {
         if (resolve) resolve(event);
     };
 
