@@ -13,8 +13,6 @@ import {
     interval,
 } from "./iter-util"
 
-import "preact"
-
 async function getTemperature(zip) {
     // const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${zip},us&units=imperial&appid=APPID`)
     // const { main: { temp } } = await res.json();
