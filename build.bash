@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-for dir in basic-event weather; do
+for dir in basic-event weather weather-preact; do
     echo "Build $dir..."
     rm -rf docs/$dir
     cp -r $dir docs/$dir

@@ -9,7 +9,10 @@ export default {
       babel({
           babelrc: false,
           presets: ["stage-3"],
-          plugins: ["external-helpers"],
+          plugins: [
+              "external-helpers",
+              ["transform-react-jsx", { pragma:"h" }],
+          ],
       }),
 
       resolve(),
@@ -18,6 +21,9 @@ export default {
           include: [
               "node_modules/**/*.js",
           ],
+          namedExports: {
+            "node_modules/preact/dist/preact.js": [ "h", "render", "Component" ],
+          },
       }),
   ],
   dest: "docs/bundle.js",

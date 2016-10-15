@@ -12,6 +12,8 @@ import {
     interval,
 } from "./iter-util"
 
+import "preact"
+
 async function getTemperature(zip) {
     return { main: { temp: Math.round(Math.random() * 100), zip }}
     // const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${zip},us&units=imperial&appid=APPID`)

@@ -1,6 +1,11 @@
 parser: babel-eslint
 
-extends: eslint:recommended
+extends:
+    - eslint:recommended
+    - plugin:react/recommended
+
+plugins:
+    - react
 
 rules:
   arrow-parens: error
@@ -20,6 +25,12 @@ rules:
   semi: [error, never]
   strict: [error, global]
 
+  react/prop-types: off
+
 env:
     browser: true
     es6: true
+
+settings:
+    react:
+        pragma: h
